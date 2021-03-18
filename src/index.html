@@ -7,7 +7,108 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Realtor</title>
 </head>
-<body>
+<body class="container">
+<main class="main">
+    <section class="houses"></section>
+    <aside class="control-panel">
+        <div class="control-panel__controller metro">
+            <h2 class="heading-3">Близость к метро</h2>
+            <input type="checkbox" id="metro-check" class="control-panel__check">
+            <label for="metro-check" class="control-panel__label">
+                <span class="control-panel__chevron"></span>
+            </label>
 
+            <ul class="metro__list">
+                <li class="metro__item">
+                    <input type="checkbox" name="metro-checkbox" id="metro-checkbox-1" class="metro__checkbox" checked>
+                    <label for="metro-checkbox-1" class="metro__label">< 10</label>
+                </li>
+                <li class="metro__item">
+                    <input type="checkbox" name="metro-checkbox" id="metro-checkbox-2" class="metro__checkbox">
+                    <label for="metro-checkbox-2" class="metro__label">10-20</label>
+                </li>
+                <li class="metro__item">
+                    <input type="checkbox" name="metro-checkbox" id="metro-checkbox-3" class="metro__checkbox">
+                    <label for="metro-checkbox-3" class="metro__label">20-30</label>
+                </li>
+                <li class="metro__item">
+                    <input type="checkbox" name="metro-checkbox" id="metro-checkbox-4" class="metro__checkbox">
+                    <label for="metro-checkbox-4" class="metro__label">30+</label>
+                </li>
+                <li  class="metro__item metro__item--all">
+                    <input type="checkbox" name="metro-checkbox" id="metro-checkbox-5" class="metro__checkbox">
+                    <label for="metro-checkbox-5" class="metro__label metro__label">Любая</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="control-panel__controller term">
+            <h2 class="heading-3">Срок сдачи</h2>
+            <input type="checkbox" id="term-check" class="control-panel__check">
+            <label for="term-check" class="control-panel__label">
+                <span class="control-panel__chevron"></span>
+            </label>
+
+            <ul class="control-panel__content">
+                <li>
+                    <input type="radio" name="term-radio" id="term-radio-1" class="term__radio" checked>
+                    <label for="term-radio-1" class="term__label">Любой</label>
+                </li>
+                <li>
+                    <input type="radio" name="term-radio" id="term-radio-2" class="term__radio">
+                    <label for="term-radio-2" class="term__label">Сдан</label>
+                </li>
+                <li>
+                    <input type="radio" name="term-radio" id="term-radio-3" class="term__radio">
+                    <label for="term-radio-3" class="term__label">В этом году</label>
+                </li>
+                <li>
+                    <input type="radio" name="term-radio" id="term-radio-4" class="term__radio">
+                    <label for="term-radio-4" class="term__label">В следующем году</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="control-panel__controller options">
+            <h2 class="heading-3">Дополнительные опции</h2>
+            <input type="checkbox" id="options-check" class="control-panel__check">
+            <label for="options-check" class="control-panel__label">
+                <span class="control-panel__chevron"></span>
+            </label>
+
+            <ul class="options__list">
+                <li>
+                    <input type="checkbox" name="options-checkbox" id="options-checkbox-1" class="options__checkbox" checked>
+                    <label for="options-checkbox-1" class="options__label">Двор без машин</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="options-checkbox" id="options-checkbox-2" class="options__checkbox">
+                    <label for="options-checkbox-2" class="options__label">Высокие потолки</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="options-checkbox" id="options-checkbox-3" class="options__checkbox">
+                    <label for="options-checkbox-3" class="options__label">Панорамные окна</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="options-checkbox" id="options-checkbox-4" class="options__checkbox">
+                    <label for="options-checkbox-4" class="options__label">Есть кладовые</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="options-checkbox" id="options-checkbox-5" class="options__checkbox">
+                    <label for="options-checkbox-5" class="options__label">Малоэтажный</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="services">
+            <input type="checkbox" name="services-checkbox" id="services-checkbox" class="services__checkbox">
+            <label for="services-checkbox" class="services__icon"></label>
+            <label for="services-checkbox" class="services__label">Услуги 0%</label>
+        </div>
+
+        <a href="#" class="btn btn--primary">Применить фильтры</a>
+        <a href="#" class="btn btn--secondary"><span>+</span>Сбросить фильтры</a>
+    </aside>
+</main>
 </body>
 </html>
