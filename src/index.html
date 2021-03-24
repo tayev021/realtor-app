@@ -18,7 +18,7 @@
                 <span class="control-panel__chevron"></span>
             </label>
 
-            <ul class="metro__list">
+            <ul class="control-panel__content metro__list">
                 <li class="metro__item">
                     <input type="checkbox" name="metro-checkbox" id="metro-checkbox-1" class="metro__checkbox" checked>
                     <label for="metro-checkbox-1" class="metro__label">< 10</label>
@@ -49,7 +49,7 @@
                 <span class="control-panel__chevron"></span>
             </label>
 
-            <ul class="control-panel__content">
+            <ul class="control-panel__content term__list">
                 <li>
                     <input type="radio" name="term-radio" id="term-radio-1" class="term__radio" checked>
                     <label for="term-radio-1" class="term__label">Любой</label>
@@ -76,9 +76,9 @@
                 <span class="control-panel__chevron"></span>
             </label>
 
-            <ul class="options__list">
+            <ul class="control-panel__content options__list">
                 <li>
-                    <input type="checkbox" name="options-checkbox" id="options-checkbox-1" class="options__checkbox" checked>
+                    <input type="checkbox" name="options-checkbox" id="options-checkbox-1" class="options__checkbox">
                     <label for="options-checkbox-1" class="options__label">Двор без машин</label>
                 </li>
                 <li>
@@ -106,10 +106,10 @@
             <label for="services-checkbox" class="services__label">Услуги 0%</label>
         </div>
 
-        <a href="#" class="btn btn--primary">Применить фильтры</a>
-        <a href="#" class="btn btn--secondary"><span>+</span>Сбросить фильтры</a>
+        <a href="#" class="btn btn--primary" data-action="filter">Применить фильтры</a>
+        <a href="#" class="btn btn--secondary" data-action="reset"><span>+</span>Сбросить фильтры</a>
     </aside>
-    <button href="" class="show-more">Показать еще</button>
+    <button href="" class="show-more" data-action="show">Показать еще</button>
 </main>
 </body>
 </html>
