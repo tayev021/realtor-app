@@ -1,7 +1,7 @@
 export default class House {
-  constructor(term = 2022,
+  constructor({term = 2022,
               metroDistance = 5,
-              options = [false, false, false, false, false]) {
+              options = [false, false, false, false, false]}) {
 
     this.title = 'ЖК Ильинские луга';
     this.metro = 'Гагарина';
