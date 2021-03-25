@@ -91,33 +91,23 @@
     margin-bottom: 3rem;
   }
 
-  &__check {
-    display: none;
-  }
-
-  &__check:checked ~ &__content {
-    display: none;
-  }
-
-  &__check:checked ~ &__label {
-    transform: rotate(180deg) translateY(7px);
-  }
-
-  &__label {
+  &__chevron {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     justify-self: end;
-    margin-left: 2rem;
-    transform: translateY(7px);
-  }
 
-  &__chevron {
     display: inline-block;
     height: 1.2rem;
     width: 1.2rem;
+
     border-top: 3px solid $color-black;
     border-left: 3px solid $color-black;
-    transform: rotate(45deg);
+    transform: rotate(45deg) translateY(9px);
+    transform-origin: center;
+
+    &--hide {
+      transform: rotate(225deg) translate(5px, -4px);
+    }
   }
 
   &__content {

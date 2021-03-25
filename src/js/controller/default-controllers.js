@@ -20,3 +20,19 @@ general.addEventListener('change', function ({target}) {
     }
   }
 });
+
+const hideButtons = Array.from(document.querySelectorAll('.control-panel__chevron'));
+
+for(let hider of hideButtons) {
+  hider.addEventListener('click', ({target}) => {
+    const content = target.nextElementSibling;
+
+    if(target.classList.contains('control-panel__chevron--hide')) {
+      target.classList.remove('control-panel__chevron--hide');
+      content.style.display = '';
+    } else {
+      target.classList.add('control-panel__chevron--hide');
+      content.style.display = 'none';
+    }
+  });
+}
