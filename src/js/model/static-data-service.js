@@ -1,6 +1,9 @@
 import House from './house';
 
 export default class StaticDataService {
+
+  // local static data for stable testing filter
+
   _localData = [
     {
       term: 2020,
